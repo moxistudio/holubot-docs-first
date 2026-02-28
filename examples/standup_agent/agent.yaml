@@ -1,0 +1,29 @@
+id: standup_agent
+display_name: Standup Assistant
+description: Summarize yesterday, today, and blockers into a concise standup note.
+executor: runtime_plan
+backend: mock
+triggers:
+  - standup
+  - daily sync
+  - daily report
+
+steps:
+  - id: collect_input
+    action: "Normalize raw user notes and infer missing structure."
+    output: "structured_notes"
+  - id: compose_standup
+    action: "Generate concise standup sections: yesterday, today, blockers."
+    output: "standup_markdown"
+  - id: governance_check
+    action: "Mark sensitive or external-send actions for confirmation."
+    output: "review_flags"
+
+output_template: |
+  ## Standup
+  - Yesterday: {yesterday}
+  - Today: {today}
+  - Blockers: {blockers}
+
+  Review Flags:
+  {review_flags}

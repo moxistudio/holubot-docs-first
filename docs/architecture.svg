@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  <defs>
+    <style>
+      .title { font: 700 28px Arial, sans-serif; fill: #111; }
+      .label { font: 600 18px Arial, sans-serif; fill: #111; }
+      .text { font: 14px Arial, sans-serif; fill: #222; }
+      .box { fill: #f7f7f7; stroke: #333; stroke-width: 2; rx: 12; ry: 12; }
+      .node { fill: #ffffff; stroke: #333; stroke-width: 1.5; rx: 8; ry: 8; }
+      .arrow { stroke: #444; stroke-width: 2; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#444"/>
+    </marker>
+  </defs>
+
+  <text x="40" y="45" class="title">HoluBot Governance Architecture</text>
+
+  <rect x="40" y="80" width="1120" height="80" class="box"/>
+  <text x="60" y="112" class="label">User Channels</text>
+  <text x="60" y="138" class="text">Telegram · Feishu · Discord · More channels</text>
+
+  <rect x="40" y="200" width="1120" height="220" class="box"/>
+  <text x="60" y="232" class="label">HoluBot Control Plane (Frontend)</text>
+  <text x="60" y="258" class="text">Intent routing · Approval gates · Trust levels · Audit logs · Memory governance</text>
+
+  <rect x="60" y="285" width="340" height="115" class="node"/>
+  <text x="78" y="312" class="label">Governance Core</text>
+  <text x="78" y="338" class="text">Policy checks</text>
+  <text x="78" y="360" class="text">Approval/deny paths</text>
+  <text x="78" y="382" class="text">Transparent degradation</text>
+
+  <rect x="430" y="285" width="340" height="115" class="node"/>
+  <text x="448" y="312" class="label">Routing Core</text>
+  <text x="448" y="338" class="text">Simple tasks answered locally</text>
+  <text x="448" y="360" class="text">Complex tasks dispatched</text>
+  <text x="448" y="382" class="text">Backend adapter selection</text>
+
+  <rect x="800" y="285" width="340" height="115" class="node"/>
+  <text x="818" y="312" class="label">Shared Services</text>
+  <text x="818" y="338" class="text">Long-term memory</text>
+  <text x="818" y="360" class="text">Health checks</text>
+  <text x="818" y="382" class="text">Append-only audit trail</text>
+
+  <rect x="40" y="470" width="1120" height="160" class="box"/>
+  <text x="60" y="502" class="label">Backend Agent Runtimes (Pluggable)</text>
+  <text x="60" y="528" class="text">OpenCode · Claude Code · Qwen Code · Kimi Code · Future adapters</text>
+
+  <rect x="60" y="545" width="210" height="65" class="node"/>
+  <text x="78" y="583" class="text">Weekly Report Agent</text>
+  <rect x="300" y="545" width="210" height="65" class="node"/>
+  <text x="318" y="583" class="text">Content Agent</text>
+  <rect x="540" y="545" width="210" height="65" class="node"/>
+  <text x="558" y="583" class="text">Code Agent</text>
+  <rect x="780" y="545" width="210" height="65" class="node"/>
+  <text x="798" y="583" class="text">Research Agent</text>
+  <rect x="1020" y="545" width="120" height="65" class="node"/>
+  <text x="1036" y="583" class="text">More...</text>
+
+  <line x1="600" y1="160" x2="600" y2="200" class="arrow"/>
+  <line x1="600" y1="420" x2="600" y2="470" class="arrow"/>
+</svg>

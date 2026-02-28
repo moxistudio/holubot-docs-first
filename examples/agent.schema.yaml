@@ -1,0 +1,43 @@
+# HoluBot custom agent contract (minimal public schema guidance)
+version: "1.0"
+required_fields:
+  - id
+  - display_name
+  - description
+  - executor
+  - backend
+  - triggers
+  - steps
+
+field_specs:
+  id:
+    type: string
+    pattern: "^[a-z0-9_\\-]{2,40}$"
+    example: "standup_agent"
+  display_name:
+    type: string
+    max_length: 60
+    example: "Standup Assistant"
+  description:
+    type: string
+    max_length: 240
+  executor:
+    type: string
+    enum: ["runtime_plan", "direct_task"]
+  backend:
+    type: string
+    example: "mock"
+  triggers:
+    type: array[string]
+    description: "Keywords used by classifier hint/routing layer."
+  steps:
+    type: array[object]
+    min_items: 1
+    step_fields:
+      - id
+      - action
+      - output
+
+notes:
+  - "Use short, deterministic steps."
+  - "Do not include secrets in agent.yaml."
