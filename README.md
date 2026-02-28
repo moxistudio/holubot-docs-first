@@ -1,96 +1,93 @@
-# HoluBot — the Bot with Boundaries
+<p align="center">
+  <img src="assets/holubot-logo.png" alt="HoluBot Logo" width="200">
+</p>
 
-> A governance & dispatch layer for AI Agent ecosystems.  
-> Route, gate, audit, and control — so your agents stay powerful without going rogue.
+<h1 align="center">HoluBot 🫙</h1>
+
+<p align="center">
+  <b>H</b>andy · <b>O</b>ptimized · <b>L</b>imitless · <b>U</b>nbreakable
+</p>
+
+<p align="center">
+  Your AI assistant — faster, leaner, more powerful, more secure.<br>
+  葫芦宝，做你的宝葫芦。
+</p>
+
+<p align="center">
+  <a href="README_ZH.md">中文</a> · <a href="docs/WHITEPAPER_ZH.md">Whitepaper</a> · <a href="examples/">Examples</a> · <a href="LICENSE">MIT License</a>
+</p>
 
 ---
 
-**The problem is real.** AI agents are more capable than ever — and more dangerous. 36% of skills on agent marketplaces contain security flaws. 43% of MCP servers have command injection vulnerabilities. Production databases have been deleted. Credentials have been leaked in plaintext. Agents have downloaded and executed malware from GitHub Issues. These aren't hypotheticals — they happened in 2025.
+## Hi, I'm HoluBot 👋
 
-**HoluBot's thesis:** The problem with AI agents isn't intelligence — it's governance. HoluBot is a lightweight **control plane** that sits in front of any agent backend. It handles intent routing, trust gating, memory governance, and auditable execution — while staying permanently thin (a few hundred lines of Python, enforced by CI).
+I'm your personal AI assistant. But let me be honest — I'm not the kind that tries to do everything by myself and then accidentally deletes your database. (Yes, that happened. In production. More than once.)
 
----
+I'm more like a **really good concierge**: I listen to what you need, figure out who's best for the job, and make sure nothing goes wrong along the way.
 
-## Quick Start
+Need a quick answer? I'll handle it myself in under a second. Need serious work done — code, reports, research? I know the right specialist and I'll connect you. Need something risky like deleting files or posting to social media? I'll tap you on the shoulder first: *"Hey, are you sure about this?"*
 
-1. Read the whitepaper for the governance model: [`docs/WHITEPAPER_ZH.md`](docs/WHITEPAPER_ZH.md)
-2. Check the public agent contract: [`docs/AGENT_SPEC.md`](docs/AGENT_SPEC.md)
-3. Copy the minimal agent template and adapt it to your workflow: [`examples/standup_agent/agent.yaml`](examples/standup_agent/agent.yaml)
+I'm named after the magic gourd in Chinese mythology 🫙 — it can hold anything inside, but only releases what you allow. My creator thought that was a good metaphor. I agree.
 
 ---
 
-## How It Works
+## What Makes Me Different
+
+Most AI assistants are built like this: one giant brain that does everything, loads everything, and charges you for everything — even when you just say "good morning."
+
+I work differently.
+
+**⚡ I'm Handy** — 80% of the time, I answer you directly. Sub-second. No need to wake up the entire AI army for a casual chat. Your "good morning" costs ~100 tokens with me. With the other guys? ~13,000. Yes, really.
+
+**💰 I'm Optimized** — I don't load your entire life history into every single message. I have a three-layer memory system: what we just talked about, what each specialist remembers, and the important stuff about you that I keep long-term. Each layer loads only when needed. Your wallet thanks me.
+
+**💪 I'm Limitless** — Behind me is a team of specialists. Need code? I'll call Claude. Weekly report? Qwen's great at that. Deep research? I've got it covered. I can plug into *any* backend through my adapter layer — swap, add, remove, without changing a single line of my own code.
+
+**🔒 I'm Unbreakable** — I don't just hand the keys to AI and hope for the best. Every action has a trust level: `auto` (I've earned your trust), `confirm` (let me check with you), or `always_confirm` (this is serious, you decide every time). I keep an audit log of everything. And when something goes wrong — a backend crashes, an API degrades — I'll tell you. I never pretend everything is fine when it isn't.
+
+---
+
+## How I Work (the short version)
 
 ```
-┌─────────────────────────────────────────────────┐
-│              User Touchpoints                    │
-│     Telegram · Discord · Feishu · (more)         │
-└───────────────────┬─────────────────────────────┘
-                    │
-┌───────────────────▼─────────────────────────────┐
-│                                                   │
-│        HoluBot · Control Plane                    │
-│        (200–500 lines of Python)                  │
-│                                                   │
-│   • Intent classification → route or reply        │
-│   • Trust gating (auto / confirm / always_confirm)│
-│   • Shared long-term memory (governed, audited)   │
-│   • Approval interception before risky actions    │
-│   • Append-only audit log for every operation     │
-│   • Health checks across all backends & channels  │
-│                                                   │
-└───────────────────┬─────────────────────────────┘
-                    │
-            AgentAdapter (pluggable)
-                    │
-      ┌─────────────┼──────────────┐
-      ▼             ▼              ▼
-  ┌────────┐  ┌─────────┐  ┌───────────┐
-  │ Weekly  │  │ Content │  │   Code    │  ... any new agent
-  │ Report  │  │ Writer  │  │  Helper   │      without changing
-  │ Agent   │  │ Agent   │  │  Agent    │      the control plane
-  └────────┘  └─────────┘  └───────────┘
+        You
+         │
+    ┌────▼────┐
+    │   Me    │  ← a few hundred lines of Python. Permanently.
+    │ (HoluBot)│  ← I route, remember, guard, and answer the easy stuff
+    └────┬────┘
+         │
+    AgentAdapter  ← my universal translator for any backend
+         │
+   ┌─────┼─────┐
+   ▼     ▼     ▼
+ Claude Qwen  Kimi  ... (any agent framework you want)
 ```
 
-The control plane **never gets fat**. No matter how many agents, skills, or MCP servers you add, the frontend stays at a few hundred lines. If it grows, something is wrong.
+That's it. I stay thin. The specialists do the heavy lifting. If I start getting fat, something has gone wrong.
 
 ---
 
-## Why HoluBot
+## The Gourd Rules 🫙
 
-| | Typical agent frameworks | HoluBot |
-|---|---|---|
-| **Trust model** | Full autonomy by default | Graduated trust — `auto` / `confirm` / `always_confirm` |
-| **Cost** | Loads everything every message (~13k tokens for "good morning") | Lightweight frontend answers 80% of messages directly (~100 tokens) |
-| **Security** | Open skill marketplace (36% have flaws) | Three-layer import audit; no open marketplace |
-| **Failure mode** | Silent degradation ("AI just got dumber") | All anomalies surfaced to user — never swallowed silently |
-| **Architecture** | Monolithic — one process does everything | Control plane + pluggable backends — isolated failure domains |
-| **Backend lock-in** | Tied to one framework | AgentAdapter abstraction — swap backends without touching the frontend |
+These are my four principles. Non-negotiable.
 
----
+1. **I never get fat.** My code stays at a few hundred lines, enforced by CI. I'm a concierge, not a bodybuilder.
 
-## Ecosystem Position
+2. **I give structured playbooks, not vibes.** My Skill system tells each specialist exactly what to do, step by step. That's why even affordable models deliver great results — they don't need to be geniuses when they have a good SOP.
 
-HoluBot is **not** another agent framework. It complements them.
+3. **Trust is earned, not assumed.** New workflows start with `confirm`. After 10 successful runs, *you* (not me) can upgrade the trust level. If something goes wrong once, I downgrade myself. No ego.
 
-- **With OpenClaw / CoPaw:** Put HoluBot in front as a governance layer — get approval gates, cost control, and audit logs while keeping full execution power.
-- **With any CLI agent (Claude Code, Qwen Code, etc.):** HoluBot routes tasks to them via the AgentAdapter interface.
-- **Standalone:** Use the built-in Skill engine for structured workflows that don't need a heavyweight backend.
-
-## What HoluBot Is Not
-
-- Not an autonomous "do-anything" agent that executes risky actions silently.
-- Not an open skill marketplace with unreviewed third-party imports.
-- Not a replacement for your preferred execution backend; it is the governance layer in front.
+4. **I never go silent.** Backend down? Model degraded? Token expired? I will always tell you. Other assistants just quietly get dumber and let you wonder what happened. Not me.
 
 ---
 
-## Agent Specification
+## A Quick Example
 
-Every custom agent is defined by a single `agent.yaml`:
+Every specialist I work with is defined by a simple YAML file:
 
 ```yaml
-# Minimal example — a standup assistant in 10 lines
+# A standup helper — defined in 10 lines
 meta:
   name: "Standup Helper"
   id: "standup"
@@ -102,67 +99,67 @@ steps:
   - id: "ask"
     action: "llm_call"
     prompt: |
-      You are a standup assistant. Ask the user:
+      Ask the user three questions:
       1. What did you do yesterday?
       2. What's the plan for today?
       3. Any blockers?
-      Summarize their answers into a concise standup note.
+      Summarize into a concise standup note.
 ```
 
-All other fields (personality, trust level, model, executor) use sensible defaults. See [`examples/`](examples/) for more.
+That's a fully functional specialist. 10 lines. No PhD required.
 
-Full spec reference: [`docs/AGENT_SPEC.md`](docs/AGENT_SPEC.md) *(coming soon)*
+More examples in [`examples/`](examples/).
 
 ---
 
-## Project Status
+## Where I Fit In
+
+I'm not trying to replace anyone. I work *with* existing tools:
+
+| If you use... | I can... |
+|---|---|
+| **OpenClaw / CoPaw** | Sit in front as a faster, cheaper, safer gateway |
+| **Claude Code / Qwen Code** | Route coding tasks to them through my adapter |
+| **Nothing yet** | Be your complete AI assistant out of the box |
+
+Think of me as the friend who knows all the right people and makes sure none of them trash your apartment.
+
+---
+
+## What's Here Now
 
 > **Stage: docs-first open-source preview**
+>
+> I'm currently showing you my blueprints. The construction crew arrives soon.
 
-This repository currently contains architecture documentation, the agent contract specification, and examples. Runnable code is being stabilized and will be released incrementally.
-
-| What's here now | What's coming next |
+| Ready | Coming soon |
 |---|---|
-| ✅ Sanitized whitepaper ([中文](docs/WHITEPAPER_ZH.md)) | 🔜 Core gateway code (~500 lines) |
-| ✅ Agent YAML spec + examples | 🔜 Token cost benchmark (real data) |
+| ✅ Whitepaper ([中文](docs/WHITEPAPER_ZH.md)) | 🔜 My core code (~500 lines of Python) |
+| ✅ Agent YAML spec + examples | 🔜 Real token cost benchmarks |
 | ✅ Architecture & design principles | 🔜 Three-layer security audit engine |
-| ✅ Roadmap | 🔜 Docker one-liner setup |
+| ✅ Roadmap | 🔜 `pip install holubot && holubot go` |
 
-**Star this repo** to follow progress. First runnable release is targeted for the coming weeks.
-
----
-
-## Design Principles
-
-1. **The frontend never gets fat.** A few hundred lines, CI-enforced. Routing and governance only.
-2. **Skill-driven, not model-dependent.** Structured SOPs tell the agent *what to do step by step*, so even cheap models deliver consistent results.
-3. **Trust is earned, not assumed.** New workflows require confirmation. After 10 successful runs, the *user* (not the AI) may upgrade trust level.
-4. **No silent failures.** Backend down? Model degraded? Token expired? The user always knows.
+**⭐ Star this repo** — I'll let you know when I'm ready to run.
 
 ---
 
-## Background
+## Talk to Me
 
-HoluBot grew out of real frustration with running AI agents in production. The whitepaper documents specific incidents, cost analysis, and architectural decisions in detail:
+This project is early. I'd love to hear your thoughts:
 
-📄 **[Read the Whitepaper (中文)](docs/WHITEPAPER_ZH.md)**
-
----
-
-## Contributing
-
-This project is in early stage. Feedback, ideas, and discussions are very welcome — please open an [Issue](https://github.com/moxistudio/holubot-docs-first/issues) or start a [Discussion](https://github.com/moxistudio/holubot-docs-first/discussions).
-
-Code contributions will be accepted once the core codebase is published.
+- 💬 [Discussions](https://github.com/moxistudio/holubot-docs-first/discussions) — ideas, feedback, questions
+- 🐛 [Issues](https://github.com/moxistudio/holubot-docs-first/issues) — bugs, suggestions
+- 🐦 [X / Twitter](https://x.com/HoluBot) — follow for updates
 
 ---
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE) — do whatever you want with me. Just don't blame me if your other AI assistant deletes your database. I tried to warn you. 🫙
 
 ---
 
 <p align="center">
-  <i>Lightweight is the method. Governance is the value.</i>
+  <b>H</b>andy · <b>O</b>ptimized · <b>L</b>imitless · <b>U</b>nbreakable<br><br>
+  <i>I'm HoluBot. I hold everything, but only release what you allow.</i>
 </p>
