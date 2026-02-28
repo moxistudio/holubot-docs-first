@@ -2,7 +2,7 @@
   <img src="assets/holubot-logo.png" alt="HoluBot Logo" width="200">
 </p>
 
-<h1 align="center">HoluBot 🫙</h1>
+<h1 align="center">HoluBot 🏺</h1>
 
 <p align="center">
   <b>H</b>andy · <b>O</b>ptimized · <b>L</b>imitless · <b>U</b>nbreakable
@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="README_ZH.md">中文</a> · <a href="docs/WHITEPAPER_ZH.md">Whitepaper</a> · <a href="examples/">Examples</a> · <a href="LICENSE">MIT License</a>
+  <a href="README_zh.md">中文</a> · <a href="docs/WHITEPAPER_ZH.md">Whitepaper</a> · <a href="examples/">Examples</a> · <a href="LICENSE">MIT License</a>
 </p>
 
 ---
@@ -27,7 +27,9 @@ I'm more like a **really good concierge**: I listen to what you need, figure out
 
 Need a quick answer? I'll handle it myself in under a second. Need serious work done — code, reports, research? I know the right specialist and I'll connect you. Need something risky like deleting files or posting to social media? I'll tap you on the shoulder first: *"Hey, are you sure about this?"*
 
-I'm named after the magic gourd in Chinese mythology 🫙 — it can hold anything inside, but only releases what you allow. My creator thought that was a good metaphor. I agree.
+I'm named after the magic gourd in Chinese mythology 🏺 — it can hold anything inside, but only releases what you allow. My creator thought that was a good metaphor. I agree.
+
+Dare to answer when I call your name? 😏
 
 ---
 
@@ -41,7 +43,7 @@ I work differently.
 
 **💰 I'm Optimized** — I don't load your entire life history into every single message. I have a three-layer memory system: what we just talked about, what each specialist remembers, and the important stuff about you that I keep long-term. Each layer loads only when needed. Your wallet thanks me.
 
-**💪 I'm Limitless** — Behind me is a team of specialists. Need code? I'll call Claude. Weekly report? Qwen's great at that. Deep research? I've got it covered. I can plug into *any* backend through my adapter layer — swap, add, remove, without changing a single line of my own code.
+**💪 I'm Limitless** — Behind me is a team of specialists. Need code? I'll call Claude. Weekly report? Qwen's great at that. Deep research? I'll send in oh-my-opencode at full power. I can plug into *any* backend through my adapter layer — swap, add, remove, without changing a single line of my own code.
 
 **🔒 I'm Unbreakable** — I don't just hand the keys to AI and hope for the best. Every action has a trust level: `auto` (I've earned your trust), `confirm` (let me check with you), or `always_confirm` (this is serious, you decide every time). I keep an audit log of everything. And when something goes wrong — a backend crashes, an API degrades — I'll tell you. I never pretend everything is fine when it isn't.
 
@@ -68,7 +70,7 @@ That's it. I stay thin. The specialists do the heavy lifting. If I start getting
 
 ---
 
-## The Gourd Rules 🫙
+## The Gourd Rules 🏺
 
 These are my four principles. Non-negotiable.
 
@@ -155,11 +157,12 @@ This project is early. I'd love to hear your thoughts:
 
 ## License
 
-[MIT](LICENSE) — do whatever you want with me. Just don't blame me if your other AI assistant deletes your database. I tried to warn you. 🫙
+[MIT](LICENSE) — do whatever you want with me. Just don't blame me if your other AI assistant deletes your database. I tried to warn you. 🏺
 
 ---
 
 <p align="center">
   <b>H</b>andy · <b>O</b>ptimized · <b>L</b>imitless · <b>U</b>nbreakable<br><br>
-  <i>I'm HoluBot. I hold everything, but only release what you allow.</i>
+  <i>I'm HoluBot. I hold everything, but only release what you allow.</i><br>
+  <i>I call your name — do you dare answer?</i>
 </p>
