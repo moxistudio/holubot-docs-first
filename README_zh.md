@@ -2,7 +2,7 @@
   <img src="assets/holubot-logo.png" alt="葫芦宝" width="200">
 </p>
 
-<h1 align="center">葫芦宝 HoluBot 🏺</h1>
+<h1 align="center">葫芦宝 HoluBot <img src="assets/hulu-emoji.png" alt="hulu" width="18" /></h1>
 
 <p align="center">
   <b>H</b>andy · <b>O</b>ptimized · <b>L</b>imitless · <b>U</b>nbreakable
@@ -27,7 +27,7 @@
 
 随便聊几句？我自己一秒搞定，不用麻烦任何人。要写代码、整理周报、做深度研究？我认识各路高手，帮你安排上。要删文件、发内容到公开平台？我会先拍拍你的肩膀：*"老板，确定要这么干吗？"*
 
-我叫葫芦宝 🏺 对，就是中国神话里那个宝葫芦——能收纳万物，但放什么出来，由你说了算。
+我叫葫芦宝 <img src="assets/hulu-emoji.png" alt="hulu" width="18" /> 对，就是中国神话里那个宝葫芦——能收纳万物，但放什么出来，由你说了算。
 
 我叫你一声，你敢答应吗？😏
 
@@ -70,7 +70,7 @@ Claude Qwen  Kimi  ...（想接谁接谁）
 
 ---
 
-## 葫芦四律 🏺
+## 葫芦四律 <img src="assets/hulu-emoji.png" alt="hulu" width="18" />
 
 这是我的四条原则，不可违反。
 
@@ -157,7 +157,7 @@ steps:
 
 ## 许可证
 
-[MIT](LICENSE) —— 随便用。但如果你的其他 AI 助手删了你的数据库，别怪我。我提醒过你了。🏺
+[MIT](LICENSE) —— 随便用。但如果你的其他 AI 助手删了你的数据库，别怪我。我提醒过你了。<img src="assets/hulu-emoji.png" alt="hulu" width="18" />
 
 ---
 

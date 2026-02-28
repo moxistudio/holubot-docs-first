@@ -2,7 +2,7 @@
   <img src="assets/holubot-logo.png" alt="HoluBot Logo" width="200">
 </p>
 
-<h1 align="center">HoluBot 🏺</h1>
+<h1 align="center">HoluBot <img src="assets/hulu-emoji.png" alt="hulu" width="18" /></h1>
 
 <p align="center">
   <b>H</b>andy · <b>O</b>ptimized · <b>L</b>imitless · <b>U</b>nbreakable
@@ -27,7 +27,7 @@ I'm more like a **really good concierge**: I listen to what you need, figure out
 
 Need a quick answer? I'll handle it myself in under a second. Need serious work done — code, reports, research? I know the right specialist and I'll connect you. Need something risky like deleting files or posting to social media? I'll tap you on the shoulder first: *"Hey, are you sure about this?"*
 
-I'm named after the magic gourd in Chinese mythology 🏺 — it can hold anything inside, but only releases what you allow. My creator thought that was a good metaphor. I agree.
+I'm named after the magic gourd in Chinese mythology <img src="assets/hulu-emoji.png" alt="hulu" width="18" /> — it can hold anything inside, but only releases what you allow. My creator thought that was a good metaphor. I agree.
 
 Dare to answer when I call your name? 😏
 
@@ -70,7 +70,7 @@ That's it. I stay thin. The specialists do the heavy lifting. If I start getting
 
 ---
 
-## The Gourd Rules 🏺
+## The Gourd Rules <img src="assets/hulu-emoji.png" alt="hulu" width="18" />
 
 These are my four principles. Non-negotiable.
 
@@ -157,7 +157,7 @@ This project is early. I'd love to hear your thoughts:
 
 ## License
 
-[MIT](LICENSE) — do whatever you want with me. Just don't blame me if your other AI assistant deletes your database. I tried to warn you. 🏺
+[MIT](LICENSE) — do whatever you want with me. Just don't blame me if your other AI assistant deletes your database. I tried to warn you. <img src="assets/hulu-emoji.png" alt="hulu" width="18" />
 
 ---
 
