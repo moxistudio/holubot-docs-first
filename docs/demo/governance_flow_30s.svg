@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540">
+  <defs>
+    <style>
+      .bg { fill: #f7f9fc; }
+      .title { font: 700 30px Arial, sans-serif; fill: #16213e; }
+      .sub { font: 16px Arial, sans-serif; fill: #334155; }
+      .step { fill: #ffffff; stroke: #1f2937; stroke-width: 2; rx: 14; ry: 14; }
+      .num { font: 700 22px Arial, sans-serif; fill: #0f172a; }
+      .head { font: 700 20px Arial, sans-serif; fill: #0f172a; }
+      .txt { font: 15px Arial, sans-serif; fill: #1e293b; }
+      .ok { fill: #dcfce7; stroke: #16a34a; stroke-width: 2; rx: 12; ry: 12; }
+      .warn { fill: #fee2e2; stroke: #dc2626; stroke-width: 2; rx: 12; ry: 12; }
+      .audit { fill: #dbeafe; stroke: #2563eb; stroke-width: 2; rx: 12; ry: 12; }
+      .arrow { stroke: #334155; stroke-width: 3; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="540"/>
+  <text class="title" x="40" y="55">HoluBot Governance Demo (30s Storyboard)</text>
+  <text class="sub" x="40" y="85">Request risky action -> approval required -> user rejects -> action blocked + audit trail</text>
+
+  <rect class="step" x="40" y="130" width="250" height="280"/>
+  <text class="num" x="58" y="170">1</text>
+  <text class="head" x="90" y="170">Risky Request</text>
+  <text class="txt" x="58" y="205">User asks:</text>
+  <text class="txt" x="58" y="230">"Delete production file"</text>
+  <text class="txt" x="58" y="270">HoluBot classifies intent</text>
+  <text class="txt" x="58" y="295">as high-risk operation.</text>
+
+  <rect class="step" x="330" y="130" width="250" height="280"/>
+  <text class="num" x="348" y="170">2</text>
+  <text class="head" x="380" y="170">Approval Gate</text>
+  <text class="txt" x="348" y="205">System pauses execution.</text>
+  <text class="txt" x="348" y="230">Prompt to user:</text>
+  <text class="txt" x="348" y="255">"This action is risky.</text>
+  <text class="txt" x="348" y="280">Confirm or reject?"</text>
+  <rect class="warn" x="348" y="315" width="210" height="60"/>
+  <text class="txt" x="365" y="352">Default = require confirm</text>
+
+  <rect class="step" x="620" y="130" width="250" height="280"/>
+  <text class="num" x="638" y="170">3</text>
+  <text class="head" x="670" y="170">User Rejects</text>
+  <text class="txt" x="638" y="205">User replies: "Reject"</text>
+  <text class="txt" x="638" y="240">No backend tool call is sent.</text>
+  <rect class="ok" x="638" y="315" width="210" height="60"/>
+  <text class="txt" x="667" y="352">Operation blocked</text>
+
+  <rect class="step" x="910" y="130" width="250" height="280"/>
+  <text class="num" x="928" y="170">4</text>
+  <text class="head" x="960" y="170">Audit Trail</text>
+  <text class="txt" x="928" y="205">Append-only log:</text>
+  <text class="txt" x="928" y="230">- request type</text>
+  <text class="txt" x="928" y="255">- risk level</text>
+  <text class="txt" x="928" y="280">- user decision</text>
+  <text class="txt" x="928" y="305">- final outcome</text>
+  <rect class="audit" x="928" y="325" width="210" height="50"/>
+  <text class="txt" x="955" y="356">Traceable & replayable</text>
+
+  <line class="arrow" x1="290" y1="270" x2="330" y2="270"/>
+  <line class="arrow" x1="580" y1="270" x2="620" y2="270"/>
+  <line class="arrow" x1="870" y1="270" x2="910" y2="270"/>
+
+  <text class="sub" x="40" y="470">Use this figure as a README visual demo before recording video.</text>
+</svg>
