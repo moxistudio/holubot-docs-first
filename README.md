@@ -19,6 +19,10 @@
 
 ---
 
+![HoluBot Architecture](docs/architecture.png)
+
+---
+
 ## Hi, I'm HoluBot 👋
 
 I'm your personal AI assistant. But let me be honest — I'm not the kind that tries to do everything by myself and then accidentally deletes your database. (Yes, that happened. In production. More than once.)
