@@ -18,9 +18,6 @@
 1. 先看治理模型白皮书：[`docs/WHITEPAPER_ZH.md`](docs/WHITEPAPER_ZH.md)
 2. 再看公开 Agent 合约：[`docs/AGENT_SPEC.md`](docs/AGENT_SPEC.md)
 3. 复制最小模板并按你的流程改造：[`examples/standup_agent/agent.yaml`](examples/standup_agent/agent.yaml)
-4. 查看治理流程图文 Demo：[`docs/demo/governance_flow_30s.svg`](docs/demo/governance_flow_30s.svg)
-
-![治理流程 Demo](docs/demo/governance_flow_30s.svg)
 
 ---
 

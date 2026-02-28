@@ -16,9 +16,6 @@
 1. Read the whitepaper for the governance model: [`docs/WHITEPAPER_ZH.md`](docs/WHITEPAPER_ZH.md)
 2. Check the public agent contract: [`docs/AGENT_SPEC.md`](docs/AGENT_SPEC.md)
 3. Copy the minimal agent template and adapt it to your workflow: [`examples/standup_agent/agent.yaml`](examples/standup_agent/agent.yaml)
-4. View governance flow demo (image): [`docs/demo/governance_flow_30s.svg`](docs/demo/governance_flow_30s.svg)
-
-![Governance flow demo](docs/demo/governance_flow_30s.svg)
 
 ---
 
