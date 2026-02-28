@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> · <a href="docs/WHITEPAPER_ZH.md">白皮书</a> · <a href="examples/">示例</a> · <a href="LICENSE">MIT 许可证</a>
+  <a href="README.md">English</a> · <a href="docs/architecture.png">架构图</a> · <a href="docs/WHITEPAPER_ZH.md">白皮书</a> · <a href="examples/">示例</a> · <a href="LICENSE">MIT 许可证</a>
 </p>
 
 ---
