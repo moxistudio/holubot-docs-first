@@ -13,6 +13,15 @@
 
 ---
 
+## 快速开始
+
+1. 先看治理模型白皮书：[`docs/WHITEPAPER_ZH.md`](docs/WHITEPAPER_ZH.md)
+2. 再看公开 Agent 合约：[`docs/AGENT_SPEC.md`](docs/AGENT_SPEC.md)
+3. 复制最小模板并按你的流程改造：[`examples/standup_agent/agent.yaml`](examples/standup_agent/agent.yaml)
+4. 观看治理流程短演示（即将补充）：`docs/demo/governance_flow_30s.mp4`
+
+---
+
 ## 工作原理
 
 ```
@@ -69,6 +78,12 @@ HoluBot **不是**又一个 Agent 框架，而是它们的治理补充层。
 - **搭配 OpenClaw / CoPaw：** 把 HoluBot 架在前面做治理层——获得审批、成本控制和审计能力，同时保留它们的执行力。
 - **搭配 CLI Agent（Claude Code / Qwen Code 等）：** HoluBot 通过 AgentAdapter 接口将任务路由给它们。
 - **独立使用：** 用内置 Skill 引擎运行结构化工作流，不需要重型后端。
+
+## HoluBot 不是什么
+
+- 不是一个“全权自治且静默执行高风险动作”的万能 Agent。
+- 不是一个开放式、无审查的第三方 Skill 市场。
+- 不是替代你后端执行框架的产品，而是架在前面的治理层。
 
 ---
 

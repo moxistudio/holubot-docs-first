@@ -11,6 +11,15 @@
 
 ---
 
+## Quick Start
+
+1. Read the whitepaper for the governance model: [`docs/WHITEPAPER_ZH.md`](docs/WHITEPAPER_ZH.md)
+2. Check the public agent contract: [`docs/AGENT_SPEC.md`](docs/AGENT_SPEC.md)
+3. Copy the minimal agent template and adapt it to your workflow: [`examples/standup_agent/agent.yaml`](examples/standup_agent/agent.yaml)
+4. Watch the governance flow demo (coming soon): `docs/demo/governance_flow_30s.mp4`
+
+---
+
 ## How It Works
 
 ```
@@ -68,6 +77,12 @@ HoluBot is **not** another agent framework. It complements them.
 - **With OpenClaw / CoPaw:** Put HoluBot in front as a governance layer — get approval gates, cost control, and audit logs while keeping full execution power.
 - **With any CLI agent (Claude Code, Qwen Code, etc.):** HoluBot routes tasks to them via the AgentAdapter interface.
 - **Standalone:** Use the built-in Skill engine for structured workflows that don't need a heavyweight backend.
+
+## What HoluBot Is Not
+
+- Not an autonomous "do-anything" agent that executes risky actions silently.
+- Not an open skill marketplace with unreviewed third-party imports.
+- Not a replacement for your preferred execution backend; it is the governance layer in front.
 
 ---
 
